@@ -1,0 +1,26 @@
+   /*
+    Big J's Deep Dish Pizza History style sheet
+    Filename: styles.css
+      
+    Author: Darryl Aho   
+    Date: 01/28/21     
+    HTML5 and CSS3 Illustrated Unit C, Skills Review
+   */
+   
+   article {
+       text-align: left;
+   }
+   
+   #tagline {
+       text-align: right;
+   }
+   
+   .contact {
+       text-align: right;
+   }
+   
+   header,
+   footer {
+       background-color: black;
+       color: red;
+   }

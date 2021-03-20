@@ -1,0 +1,33 @@
+﻿/* 
+   Spotted Wren Garden Center style sheet 
+   Filename: styles.css
+
+   Author:   
+   Date:     
+   HTML5 and CSS3 Illustrated Unit D, Independent Challenge 1
+ */
+
+/* body and page container */
+body {
+   background-color: white;
+}
+.container {
+   background-color: lightgreen;
+}
+
+/* headings */
+header {
+   background-color: yellow;
+   text-align: center;
+}
+
+/* main content */
+article {
+   background-color: peachpuff;
+}
+  
+/* footer section */
+footer {
+   background-color: yellow;
+   text-align: center;
+}
