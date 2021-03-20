@@ -1,0 +1,288 @@
+﻿/* 
+   Big J's Deep Dish Pizza 
+   Filename: styles.css
+
+   Author: Darryl Aho  
+   Date: 02/11/21    
+   HTML5 and CSS3 Illustrated Unit F, Skills Review
+ */
+
+
+/* reset styles */
+
+html {
+    font-size: 12px;
+}
+
+article,
+body,
+div,
+footer,
+header,
+h1,
+h2,
+nav,
+p {
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* body and container */
+
+body {
+    max-width: 960px;
+    margin: 0 auto;
+    background-color: #ddd;
+}
+
+.container {
+    background-color: #ffcc66;
+    position: relative;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.6em;
+    line-height: 1.4em;
+}
+
+a:link {
+    color: black;
+}
+
+a:visited {
+    color: #888;
+}
+
+a:active {
+    position: relative;
+    top: 1px;
+    left: 1px;
+}
+
+
+/* skip navigation link */
+
+p.skipnavigation a {
+    position: absolute;
+    left: -10000px;
+}
+
+p.skipnavigation a:focus {
+    color: #34180f;
+    background-color: white;
+    top: 0.4em;
+    right: 0.4em;
+    left: 0.4em;
+    z-index: 2;
+}
+
+
+/* header section */
+
+h1 {
+    text-align: center;
+    font-family: "Playfair Display", "Times New Roman", Times, serif;
+    font-size: 4em;
+    font-weight: 900;
+}
+
+
+/* site navigation */
+
+nav.sitenavigation {
+    /* width: 19%; */
+    margin: 1em 1em 0;
+    /* padding: 2%; */
+    /* float: left; */
+    background-color: black;
+    text-align: center;
+}
+
+nav.sitenavigation p {
+    display: inline-block;
+    padding: 0.3em;
+}
+
+nav.sitenavigation p,
+a {
+    padding: 0.2em 0.6em;
+    display: inline-block;
+}
+
+nav.sitenavigation a:link {
+    text-decoration: none;
+    color: white;
+}
+
+nav.sitenavigation a:visited {
+    color: #ccc;
+}
+
+nav.sitenavigation a:hover {
+    color: red;
+}
+
+nav.sitenavigation a:focus {
+    color: white;
+}
+
+
+/* page navigation */
+
+nav.pagenavigation {
+    margin: 0 1em;
+    text-align: center;
+}
+
+nav.pagenavigation p {
+    margin: 0 0.2em;
+    display: inline-block;
+    background-color: #ffcc66;
+}
+
+nav.pagenavigation p a {
+    padding: 0.2em 0.6em;
+    display: inline-block;
+}
+
+nav.pagenavigation a:link {
+    border: 2px solid white;
+    text-decoration: none;
+}
+
+nav.pagenavigation a:visited {
+    border: 2px solid white;
+    color: #999;
+}
+
+nav.pagenavigation a:hover,
+nav.pagenavigation a:focus {
+    border: 2px solid #ffcc66;
+    color: red;
+    background-color: white;
+}
+
+
+/* main content */
+
+article {
+    /* width: 69%; */
+    margin: 0 1em 1em;
+    padding: 1em 1em 0.5em;
+    /* float: right; */
+    background-color: rgb(255, 255, 255);
+}
+
+h2,
+h3 {
+    padding-bottom: 0.25em;
+    margin: 0;
+    color: red;
+    font-family: "Playfair Display", "Times New Roman", Times, serif;
+    font-weight: 900;
+}
+
+h2 {
+    font-size: 2.8em;
+    text-align: center;
+}
+
+h3 {
+    margin: 1.5em 0 0.5em;
+    font-size: 2em;
+}
+
+article p {
+    margin-bottom: 0.5em;
+}
+
+article.display p {
+    text-align: center;
+}
+
+article.display #contentstart {
+    color: red;
+    font-family: "Playfair Display", "Times New Roman", Times, serif;
+    font-weight: 900;
+    font-size: 2.4em;
+}
+
+article div.subsection {
+    margin-left: 3em;
+}
+
+article div.subsection p {
+    margin: 0;
+}
+
+.contrastbox {
+    width: 30%;
+    padding: 0.5em;
+    margin: 0.5em auto;
+    border: 1px solid rgb(119, 119, 119);
+    text-align: center;
+    font-weight: bold;
+    background-color: rgb(221, 221, 221);
+}
+
+.contrastbox p {
+    margin-bottom: 0;
+}
+
+.publication {
+    font-style: italic;
+}
+
+.accent {
+    font-weight: bold;
+}
+
+
+/* footer section */
+
+footer {
+    padding: 0.5em 5%;
+    text-align: center;
+    /* clear: both; */
+}
+
+footer p {
+    width: 30%;
+}
+
+footer p.contact1 {
+    float: left;
+}
+
+footer p.contact2 {
+    float: right;
+}
+
+footer p.contact3 {
+    margin: 0 auto;
+}
+
+
+/* print styles */
+
+@media print {
+    body,
+    h2,
+    article {
+        color: rgb(0, 0, 0);
+        background-color: rgb(255, 255, 255);
+    }
+    body {
+        max-width: 100%;
+    }
+    nav {
+        display: none;
+    }
+}
+
+@page {
+    margin: 0.75in;
+}

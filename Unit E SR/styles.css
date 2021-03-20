@@ -1,0 +1,130 @@
+﻿/* 
+   Big J's Deep Dish Pizza 
+   Filename: styles.css
+
+   Author: Darryl Aho  
+   Date: 02/06/21    
+   HTML5 and CSS3 Illustrated Unit E, Skills Review
+ */
+
+
+/* reset styles */
+
+html {
+    font-size: 12px;
+}
+
+article,
+body,
+div,
+footer,
+header,
+h1,
+h2,
+p {
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* body and container */
+
+body {
+    max-width: 960px;
+    margin: 0 auto;
+    background-color: #ddd;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.6em;
+    line-height: 1.4em;
+}
+
+.container {
+    background-color: rgb(255, 204, 102);
+}
+
+
+/* headings */
+
+h1,
+h2 {
+    text-align: center;
+    font-family: "Playfair Display", "Times New Roman", Times, serif;
+}
+
+h1 {
+    font-size: 4em;
+    font-weight: 900;
+}
+
+h2 {
+    padding: 0 0.25em 0.25em;
+    margin: 0;
+    color: red;
+    font-size: 2.8em;
+    text-shadow: 2px -1px 2px rgb(255, 204, 102);
+}
+
+
+/* main content */
+
+article {
+    margin: 1em;
+    padding: 1em;
+    background-color: #fff;
+}
+
+.title {
+    font-style: italic;
+}
+
+.contrastbox {
+    width: 30%;
+    padding: 0.5em;
+    margin: 0.5em auto;
+    text-align: center;
+    font-weight: bold;
+    background-color: #ddd;
+    border: solid 1px #777;
+    box-shadow: 3px 3px 0 #777;
+}
+
+.firstparagraph:first-letter {
+    font-size: 3em;
+    line-height: 0.9em;
+    float: left;
+}
+
+
+/* footer section */
+
+footer {
+    padding: 0.5em;
+    text-align: center;
+}
+
+.accent {
+    font-weight: bold;
+}
+
+
+/* print styles */
+
+@media print {
+    body,
+    h2,
+    article {
+        color: #000;
+        background-color: #fff;
+    }
+    body {
+        max-width: 100%;
+    }
+}
+
+@page {
+    margin: 1in;
+}
